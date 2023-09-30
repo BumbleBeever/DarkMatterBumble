@@ -1,9 +1,9 @@
 /**
- * @name Dark Matter
- * @author Tropical#8908, Hammock#3110
- * @version 3.0.0
- * @description A cold, dark & frosty theme.
- * @source https://github.com/DiscordStyles/DarkMatter/
+ * @name Dark Matter Bumble
+ * @author Tropical#8908, Hammock#3110, BumbleBeever
+ * @version 3.0.1
+ * @description A cold, dark & frosty theme. Edited by BumbleBeever
+ * @source https://github.com/BumbleBeever/DarkMatterBumble
 */
 
 @import url('https://DiscordStyles.github.io/DarkMatter/src/base.css');
@@ -19,3 +19,48 @@
     --accent: 37, 172, 232;
     --accent-alt: 29, 101, 134;
 }
+
+:not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
+:not(div[class*="userProfile"]).theme-light,
+div[class*="userProfile"][class*="unThemed"].theme-light {
+	/* Discord vars */
+	--background-modifier-hover: rgba(var(--accent), 0.3);
+	--background-modifier-active: rgba(var(--accent-alt), 0.3);
+	--background-modifier-selected: rgba(var(--accent), 0.6);
+	--channels-default: rgba(var(--dm-white), 0.4);
+	--text-normal: rgba(var(--dm-white), 0.9);
+	--interactive-muted: rgba(var(--dm-white), 0.17);
+	--interactive-hover: rgba(var(--dm-white), 1);
+	--interactive-active: rgba(var(--dm-white), 0.9);
+}
+
+
+/* User Panel fix */
+
+div[class^='sidebar-']>section>div:last-child {
+	bottom: -1px;
+}
+
+
+/* Direct Messages fix */
+
+.wrapper-2PSQCG {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Unread Direct Message fix */
+
+.lowerBadge-3j0ZAg { 
+    bottom: -2px;
+    right: -2px;
+}
+
+
+/* Titlebar */
+
+div[class*="typeWindows-"]::after {
+	content: 'BumbleCord';
+}
+
