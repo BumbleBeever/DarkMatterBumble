@@ -6,7 +6,11 @@
  * @source https://github.com/BumbleBeever/DarkMatterBumble
 */
 
-@import url('https://DiscordStyles.github.io/DarkMatter/src/base.css');
+/* Temporary change base css (might have to update mine) -- class names changed!
+
+@import url('https://DiscordStyles.github.io/DarkMatter/src/base.css'); */
+
+@import url('https://raw.githubusercontent.com/DiscordStyles/DarkMatter/e3cfceeb62f6b1964d0d960111003fc496bb0d83/src/base.css'); 
 
 /* Variables */
 :root {
@@ -37,14 +41,14 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 
 /* User Panel fix */
 
-div[class^='sidebar-']>section>div:last-child {
+div[class^='sidebar_']>section>div:last-child {
 	bottom: -1px;
 }
 
 
-/* Direct Messages fix */
+/* Direct Messages fix */ 
 
-.wrapper-2PSQCG {
+.wrapper__3af0b {
     width: 40px;
     height: 40px;
 }
@@ -52,7 +56,7 @@ div[class^='sidebar-']>section>div:last-child {
 
 /* Unread Direct Message fix */
 
-.lowerBadge-3j0ZAg { 
+div[class*="lowerBadge_"] { 
     bottom: -2px;
     right: -2px;
 }
@@ -60,7 +64,49 @@ div[class^='sidebar-']>section>div:last-child {
 
 /* Titlebar */
 
-div[class*="typeWindows-"]::after {
+div[class*="typeWindows_"]::after {
 	content: 'BumbleCord';
 }
 
+
+/* discord broken dirty fixes (needs work): */
+
+#bd-pub-li{
+    display: none;
+}
+
+.app_de4237, 
+.bg__12180,
+.wrapper_a7e7a8.guilds__2b93a,
+.animatorTop__609e7.translate_c2f6c4.didRender_f1da13,
+.wrapper_cd625e.categoryList__173de,
+.member_b44d5d,
+.sidebar_ded4b5,
+.contentRegion__0bec1,
+.contentRegionScroller__86c79,
+.childWrapper__01b9c:hover,
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
+    background-color: transparent !important;
+}
+
+.container__590e2,
+.container__5c7e7,
+.container_b2ce9c,
+.contentTransitionWrap_c5bc61,
+.chatContent__5dca8,
+.sidebarRegionScroller__1fa7e,
+.privateChannels__93473,
+.picker__6dca7 {
+   background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* .item__183e8.labelContainer_bc2861.colorDefault__0b482:not(.colorBrand__471df) > .label__73cb9 */
+.text-xs-medium__220aa.soundName__35f8b,
+.eyebrow_e5a66c.defaultColor__87d87.sectionTitle__8df35.app_de4237
+.item__183e8.labelContainer_bc2861.colorDefault__0b482:not(.colorBrand__471df) {
+    color: grey !important;
+}
+
+div[data-list-id^="members-"] [class*="placeholder"] {
+	--backgorund-primary: var(--text-normal);
+}
