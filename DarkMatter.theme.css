@@ -82,6 +82,8 @@ div[class*="typeWindows_"]::after {
 .wrapper_cd625e.categoryList__173de,
 .member_b44d5d,
 .sidebar_ded4b5,
+/* .container__590e2, */
+.base__3e6af,
 .contentRegion__0bec1,
 .contentRegionScroller__86c79,
 .childWrapper__01b9c:hover,
@@ -89,7 +91,7 @@ div[class*="typeWindows_"]::after {
     background-color: transparent !important;
 }
 
-.container__590e2,
+/* .container__590e2, */
 .container__5c7e7,
 .container_b2ce9c,
 .contentTransitionWrap_c5bc61,
@@ -107,6 +109,8 @@ div[class*="typeWindows_"]::after {
     color: grey !important;
 }
 
-div[data-list-id^="members-"] [class*="placeholder"] {
-	--backgorund-primary: var(--text-normal);
+/* Fix background channels */
+#app-mount>div:not([class^="appDevToolsWrapper_"]),
+.autocomplete-1vrmpx {
+    --background-secondary: rgba(0, 0, 0, 0.7);
 }
