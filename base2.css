@@ -375,14 +375,14 @@
  
  /* Panels */
  
- div[class^='sidebar-']>section {
+ div[class^='sidebar_']>section {
      --background-primary: rgba(var(--dm-white), 0.07);
      --background-secondary: rgba(var(--dm-white), 0.1);
      --background-secondary-alt: rgba(var(--md-black), 0.95);
      margin-bottom: 70px;
  }
  
- div[class^='sidebar-']>section>div:last-child {
+ div[class^='sidebar_']>section>div:last-child {
      background-color: var(--background-secondary-alt);
      box-sizing: border-box;
      height: 70px;
