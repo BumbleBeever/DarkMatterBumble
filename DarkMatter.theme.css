@@ -26,6 +26,19 @@
     --accent-alt: 29, 101, 134;
 }
 
+/* Titlebar */
+
+div[class*="typeWindows_"]::after {
+	content: 'BumbleCord';
+}
+
+/* User Panel fix */
+
+div[class^='sidebar_']>section>div:last-child {
+	bottom: -1px;
+}
+
+
 /*
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
 :not(div[class*="userProfile"]).theme-light,
@@ -42,13 +55,6 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 }
 
 
-/* User Panel fix 
-
-div[class^='sidebar_']>section>div:last-child {
-	bottom: -1px;
-}
-
-
 /* Direct Messages fix 
 
 .wrapper__3af0b {
@@ -62,13 +68,6 @@ div[class^='sidebar_']>section>div:last-child {
 div[class*="lowerBadge_"] { 
     bottom: -2px;
     right: -2px;
-}
-
-
-/* Titlebar 
-
-div[class*="typeWindows_"]::after {
-	content: 'BumbleCord';
 }
 
 
