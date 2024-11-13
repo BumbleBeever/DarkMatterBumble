@@ -29,7 +29,6 @@
 	 --accent-alt: 29, 101, 134;
 	 --md-black: 0, 0, 0;
 	 --dm-white: 255, 255, 255;
-	 --custom-channel-members-bg: rgba(0, 0, 0, 0.7) !important;
 	 /* BlurpleRecolor */
 	 --accentcolor: var(--accent);
 	 --vaccentcolor-hover: rgb(var(--accent));
