@@ -294,50 +294,50 @@
 	 --background-secondary: transparent;
  }
  
- #app-mount>div[class^="appDevToolsWrapper_"] {
+ #app-mount>div[class^="appDevToolsWrapper-"] {
 	 --background-primary: transparent;
 	 --background-tertiary: transparent;
 	 --background-secondary: rgba(var(--md-black), 0.7);
 	 background-color: rgba(var(--md-black), 0.4);
  }
- div[class^="notAppAsidePanel_"]>div[class^="app_"]>div[class^="app_"],
- div[class^="app_"]>div[class^="bg_"] {
-	 background-color: transparent;
- }
- div[class*="baseLayer_"]>div[class^="container_"] {
-	 background-color: rgb(var(--md-black), 0.4);
- }
- 
- nav+div [class^='sidebar_'],
- nav+div[class^='base_'] {
-	 overflow: visible !important;
-	 position: relative;
-	 max-width: calc(100% - 72px);
- }
- 
- nav+div[class^='base_'] > div[class^="notice"] {
-	 border-radius: 0;
- }
- 
- div[class^='base_']>div,
- section[class*="themed_"] {
-	 --background-secondary: rgba(var(--md-black), 0.7);
-	 --background-tertiary: rgba(var(--dm-white), 0.05);
-	 --background-primary: rgba(var(--md-black), 0.8);
- }
- 
- #app-mount>div:not([class^="appDevToolsWrapper_"]),
- .autocomplete-1vrmpx {
-	 --background-primary: var(--background-solid);
-	 --background-secondary: var(--background-solid-dark);
-	 --background-secondary-alt: var(--background-solid-darker);
-	 --background-tertiary: var(--background-solid-darker);
- }
+ div[class^="notAppAsidePanel-"]>div[class^="app-"]>div[class^="app-"],
+div[class^="app-"]>div[class^="bg-"] {
+    background-color: transparent;
+}
+div[class*="baseLayer-"]>div[class^="container-"] {
+    background-color: rgb(var(--md-black), 0.4);
+}
+
+nav+div [class^='sidebar-'],
+nav+div[class^='base-'] {
+	overflow: visible !important;
+	position: relative;
+	max-width: calc(100% - 72px);
+}
+
+nav+div[class^='base-'] > div[class^="notice"] {
+	border-radius: 0;
+}
+
+div[class^='base-']>div,
+section[class*="themed-"] {
+	--background-secondary: rgba(var(--md-black), 0.7);
+	--background-tertiary: rgba(var(--dm-white), 0.05);
+	--background-primary: rgba(var(--md-black), 0.8);
+}
+
+#app-mount>div:not([class^="appDevToolsWrapper-"]),
+.autocomplete-1vrmpx {
+	--background-primary: var(--background-solid);
+	--background-secondary: var(--background-solid-dark);
+	--background-secondary-alt: var(--background-solid-darker);
+	--background-tertiary: var(--background-solid-darker);
+}
  
  
  /* Header */
  
- section[class*="themed-"] {
+ section[class*="themed_"] {
 	 height: 54px;
 	 box-shadow: var(--elevation-low);
 	 background-color: rgb(var(--md-black), 0.925) !important;
@@ -348,8 +348,8 @@
 	 display: none;
  }
  
- section[class*="themed-"]::before,
- section[class*="themed-"] ::after {
+ section[class*="themed_"]::before,
+ section[class*="themed_"] ::after {
 	 content: none;
  }
  
@@ -368,7 +368,7 @@
 	 width: 22px;
  }
  
- section div[class^="toolbar"]>div[role][class*="selected-"] {
+ section div[class^="toolbar"]>div[role][class*="selected_"] {
 	 background-color: rgba(var(--dm-white), 0.1);
  }
  
