@@ -431,38 +431,38 @@
      border-radius: 5px;
  }
  
- div[id^="chat-messages-"]+div:not([id]):last-child {
-     height: 8px;
- }
- 
- div[id^="chat-messages-"][class*="cozy_"] {
-     padding-left: calc(var(--avatar-size) * 2);
- }
- 
- div[id^="chat-messages-"] {
-     margin-left: 8px;
-     margin-right: 8px;
-     border-radius: 4px;
- }
- 
- div[id^="chat-messages-"]>div[class^="buttonContainer_"] {
-     transform: scale(.85);
-     top: 1px;
- }
- 
- div[id^="chat-messages-"] {
-     --background-primary: rgba(var(--md-black), 0.5);
- }
- 
- div[id^="chat-messages-"]>div>[class^="avatar_"] {
-     margin-top: 6px;
-     width: var(--avatar-size);
-     height: var(--avatar-size);
- }
- 
- div[id^="chat-messages-"][class*="cozy_"] div::before {
-     --gutter: 13px;
- }
+li[id^="chat-messages-"]+div:not([id]):last-child {
+    height: 8px;
+}
+
+li[id^="chat-messages-"][class*="cozy_"] {
+    padding-left: calc(var(--avatar-size) * 2);
+}
+
+li[id^="chat-messages-"] {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+li[id^="chat-messages-"]>div[role^="article"]>div[class^="buttonContainer_"] {
+    transform: scale(.85);
+    top: 1px;
+}
+
+li[id^="chat-messages-"] {
+    --background-primary: rgba(var(--md-black), 0.5);
+}
+
+li[id^="chat-messages-"]>div>[class^="avatar-"] {
+    margin-top: 6px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+}
+
+li[id^="chat-messages-"][class*="cozy_"] div::before {
+    --gutter: 13px;
+}
  
  .mention {
      transition: 150ms ease;
