@@ -27,6 +27,20 @@
     --custom-channel-members-bg: rgba(0, 0, 0, 0.7) !important;
 }
 
+:not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
+:not(div[class*="userProfile"]).theme-light,
+div[class*="userProfile"][class*="unThemed"].theme-light {
+	/* Discord vars */
+	--background-modifier-hover: rgba(var(--accent), 0.3);
+	--background-modifier-active: rgba(var(--accent-alt), 0.3);
+	--background-modifier-selected: rgba(var(--accent), 0.6);
+	--channels-default: rgba(var(--dm-white), 0.4);
+	--text-normal: rgba(var(--dm-white), 0.9);
+	--interactive-muted: rgba(var(--dm-white), 0.17);
+	--interactive-hover: rgba(var(--dm-white), 1);
+	--interactive-active: rgba(var(--dm-white), 0.9);
+}
+
 
 /* Titlebar */
 
