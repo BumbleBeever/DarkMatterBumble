@@ -404,7 +404,7 @@
      background: transparent;
  }
  
- div[class^="container_"][id^="chat-messages-"] {
+ li[class^="container_"]>div[id^="message_"]>div[id^="chat-messages-"] {
      --background-modifier-hover: var(--background-solid-dark);
  }
  
@@ -416,7 +416,7 @@
      content: none;
  }
  
- div[data-list-id="chat-messages"] {
+ ol[data-list-id="chat-messages"] {
      --background-primary: transparent;
      --background-secondary: rgba(var(--dm-white), 0.05);
      --background-accent: rgba(var(--dm-white), 0.1);
