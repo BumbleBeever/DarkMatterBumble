@@ -12,7 +12,7 @@
 
 @import url('https://raw.githubusercontent.com/DiscordStyles/DarkMatter/e3cfceeb62f6b1964d0d960111003fc496bb0d83/src/base.css'); */
 
-@import url('https://raw.githubusercontent.com/BumbleBeever/DarkMatterBumble/main/src/base.css');
+@import url('https://bumblebeever.github.io/DarkMatterBumble/src/base.css');
 
 /* Variables */
 :root {
@@ -26,94 +26,9 @@
     --accent-alt: 29, 101, 134;
 }
 
+
 /* Titlebar */
 
 div[class*="typeWindows_"]::after {
 	content: 'BumbleCord';
 }
-
-/* User Panel fix */
-
-div[class^='sidebar_']>section>div:last-child {
-	bottom: -1px;
-}
-
-
-/*
-:not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
-:not(div[class*="userProfile"]).theme-light,
-div[class*="userProfile"][class*="unThemed"].theme-light {
-	/* Discord vars 
-	--background-modifier-hover: rgba(var(--accent), 0.3);
-	--background-modifier-active: rgba(var(--accent-alt), 0.3);
-	--background-modifier-selected: rgba(var(--accent), 0.6);
-	--channels-default: rgba(var(--dm-white), 0.4);
-	--text-normal: rgba(var(--dm-white), 0.9);
-	--interactive-muted: rgba(var(--dm-white), 0.17);
-	--interactive-hover: rgba(var(--dm-white), 1);
-	--interactive-active: rgba(var(--dm-white), 0.9);
-}
-
-
-/* Direct Messages fix 
-
-.wrapper__3af0b {
-    width: 40px;
-    height: 40px;
-}
-
-
-/* Unread Direct Message fix 
-
-div[class*="lowerBadge_"] { 
-    bottom: -2px;
-    right: -2px;
-}
-
-
-/* discord broken dirty fixes (needs work): 
-
-#bd-pub-li{
-    display: none;
-}
-
-.app_de4237, 
-.bg__12180,
-.wrapper_a7e7a8.guilds__2b93a,
-.animatorTop__609e7.translate_c2f6c4.didRender_f1da13,
-.wrapper_cd625e.categoryList__173de,
-.member_b44d5d,
-.sidebar_ded4b5,
-/* .container__590e2, 
-.base__3e6af,
-.contentRegion__0bec1,
-.contentRegionScroller__86c79,
-.childWrapper__01b9c:hover,
-.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
-    background-color: transparent !important;
-}
-
-/* .container__590e2, 
-.container__5c7e7,
-.container_b2ce9c,
-.contentTransitionWrap_c5bc61,
-.chatContent__5dca8,
-.sidebarRegionScroller__1fa7e,
-.privateChannels__93473,
-.picker__6dca7 {
-   background: rgba(0, 0, 0, 0.7) !important;
-}
-
-/* .item__183e8.labelContainer_bc2861.colorDefault__0b482:not(.colorBrand__471df) > .label__73cb9 
-.text-xs-medium__220aa.soundName__35f8b,
-.eyebrow_e5a66c.defaultColor__87d87.sectionTitle__8df35.app_de4237
-.item__183e8.labelContainer_bc2861.colorDefault__0b482:not(.colorBrand__471df) {
-    color: grey !important;
-}
-
-/* Fix background channels 
-#app-mount>div:not([class^="appDevToolsWrapper_"]),
-.autocomplete-1vrmpx {
-    --background-secondary: rgba(0, 0, 0, 0.7);
-}
-*/
