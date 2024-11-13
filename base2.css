@@ -253,7 +253,7 @@
  }
  
  div[data-list-id^="members-"] [class*="placeholder"] {
-     --backgorund-primary: var(--text-normal);
+    --background-primary: var(--text-normal);
  }
  
  div[class^='nowPlayingColumn'] {
@@ -308,8 +308,8 @@
      background-color: rgb(var(--md-black), 0.4);
  }
  
- nav+div [class^='sidebar-'],
- nav+div[class^='base-'] {
+ nav+div [class^='sidebar_'],
+ nav+div[class^='base_'] {
      overflow: visible !important;
      position: relative;
      max-width: calc(100% - 72px);
