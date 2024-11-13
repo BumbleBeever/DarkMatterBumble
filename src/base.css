@@ -6,7 +6,7 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
  @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
- @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+ /* @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css'); */
  
  button {
 	 --accentcolor: var(--accent-alt);
@@ -337,7 +337,7 @@
  
  /* Header */
  
- section[class*="themed_"] {
+ section[class*="themed-"] {
 	 height: 54px;
 	 box-shadow: var(--elevation-low);
 	 background-color: rgb(var(--md-black), 0.925) !important;
@@ -348,8 +348,8 @@
 	 display: none;
  }
  
- section[class*="themed_"]::before,
- section[class*="themed_"] ::after {
+ section[class*="themed-"]::before,
+ section[class*="themed-"] ::after {
 	 content: none;
  }
  
@@ -368,7 +368,7 @@
 	 width: 22px;
  }
  
- section div[class^="toolbar"]>div[role][class*="selected_"] {
+ section div[class^="toolbar"]>div[role][class*="selected-"] {
 	 background-color: rgba(var(--dm-white), 0.1);
  }
  
