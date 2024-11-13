@@ -1,4 +1,4 @@
-/* 
+/*
  * Yes, this codebase is near unreadable. Why?
  * I designed this mainly as a test to see how viable avoidance of straight out class selectors would be.
  * The codebase was never designed to be pretty, it was designed to require as little maintenance as possible.
@@ -6,7 +6,7 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
  @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
- @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+ /* @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css'); */
  
  button {
 	 --accentcolor: var(--accent-alt);
@@ -105,22 +105,22 @@
  
  /* Titlebar */
  
- div[class*="typeWindows_"] {
+ div[class*="typeWindows-"] {
 	 --background-modifier-hover: rgba(var(--dm-white), 0.05);
 	 --background-modifier-active: rgba(var(--dm-white), 0.075);
 	 height: 26px;
  }
  
- div[class*="typeWindows_"]>div:first-child {
+ div[class*="typeWindows-"]>div:first-child {
 	 display: none;
  }
  
- div[class*="typeWindows_"]>div[role="button"] {
+ div[class*="typeWindows-"]>div[role="button"] {
 	 height: 30px;
 	 width: 36px;
  }
  
- div[class*="typeWindows_"]::after {
+ div[class*="typeWindows-"]::after {
 	 content: 'Discord';
 	 font-weight: 5000;
 	 line-height: 31px;
@@ -240,7 +240,7 @@
  }
  
  /* members wrapper */
- .container_b2ce9c {
+ .container-2o3qEW {
 	 --background-secondary: rgba(var(--md-black), 0.4);
 	 --background-modifier-hover: rgba(var(--dm-white), 0.07);
 	 --background-modifier-active: var(--background-modifier-hover);
@@ -308,18 +308,18 @@
 	 background-color: rgb(var(--md-black), 0.4);
  }
  
- nav+div [class^='sidebar-'],
- nav+div[class^='base-'] {
+ nav+div [class^='sidebar_'],
+ nav+div[class^='base_'] {
 	 overflow: visible !important;
 	 position: relative;
 	 max-width: calc(100% - 72px);
  }
  
- nav+div[class^='base-'] > div[class^="notice"] {
+ nav+div[class^='base_'] > div[class^="notice"] {
 	 border-radius: 0;
  }
  
- div[class^='base-']>div,
+ div[class^='base_']>div,
  section[class*="themed_"] {
 	 --background-secondary: rgba(var(--md-black), 0.7);
 	 --background-tertiary: rgba(var(--dm-white), 0.05);
@@ -375,14 +375,14 @@
  
  /* Panels */
  
- div[class^='sidebar-']>section {
+ div[class^='sidebar_']>section {
 	 --background-primary: rgba(var(--dm-white), 0.07);
 	 --background-secondary: rgba(var(--dm-white), 0.1);
 	 --background-secondary-alt: rgba(var(--md-black), 0.95);
 	 margin-bottom: 70px;
  }
  
- div[class^='sidebar-']>section>div:last-child {
+ div[class^='sidebar_']>section>div:last-child {
 	 background-color: var(--background-secondary-alt);
 	 box-sizing: border-box;
 	 height: 70px;
@@ -404,7 +404,7 @@
 	 background: transparent;
  }
  
- div[class^="container_"][id^="chat-messages-"] {
+ li[class^="container_"]>div[id^="message_"]>div[id^="chat-messages-"] {
 	 --background-modifier-hover: var(--background-solid-dark);
  }
  
@@ -416,7 +416,7 @@
 	 content: none;
  }
  
- div[data-list-id="chat-messages"] {
+ ol[data-list-id="chat-messages"] {
 	 --background-primary: transparent;
 	 --background-secondary: rgba(var(--dm-white), 0.05);
 	 --background-accent: rgba(var(--dm-white), 0.1);
@@ -431,36 +431,36 @@
 	 border-radius: 5px;
  }
  
- div[id^="chat-messages-"]+div:not([id]):last-child {
+ li[id^="chat-messages-"]+div:not([id]):last-child {
 	 height: 8px;
  }
  
- div[id^="chat-messages-"][class*="cozy_"] {
+ li[id^="chat-messages-"][class*="cozy-"] {
 	 padding-left: calc(var(--avatar-size) * 2);
  }
  
- div[id^="chat-messages-"] {
+ li[id^="chat-messages-"] {
 	 margin-left: 8px;
 	 margin-right: 8px;
 	 border-radius: 4px;
  }
  
- div[id^="chat-messages-"]>div[class^="buttonContainer_"] {
+ li[id^="chat-messages-"]>div[role^="article"]>div[class^="buttonContainer_"] {
 	 transform: scale(.85);
 	 top: 1px;
  }
  
- div[id^="chat-messages-"] {
+ li[id^="chat-messages-"] {
 	 --background-primary: rgba(var(--md-black), 0.5);
  }
  
- div[id^="chat-messages-"]>div>[class^="avatar_"] {
+ li[id^="chat-messages-"]>div>[class^="avatar-"] {
 	 margin-top: 6px;
 	 width: var(--avatar-size);
 	 height: var(--avatar-size);
  }
  
- div[id^="chat-messages-"][class*="cozy_"] div::before {
+ li[id^="chat-messages-"][class*="cozy-"] div::before {
 	 --gutter: 13px;
  }
  
@@ -476,11 +476,11 @@
 	 background-color: rgba(var(--accent), 0.3) !important;
  }
  
- #app-mount .container__5c7e7 {
+ #app-mount .container-2cd8Mz {
 	 background: var(--background-primary);
  }
  
- div[class*="barBase_"] {
+ div[class*="barBase-"] {
 	 padding-bottom: 0;
 	 background-color: rgba(var(--accent-alt), 0.9);
  }
@@ -518,15 +518,15 @@
 	 --background-secondary: rgba(var(--md-black), 0.7);
  }
  
- div[class^="sidebarRegionScroller_"]>nav {
+ div[class^="sidebarRegionScroller-"]>nav {
 	 --background-secondary: transparent;
  }
  
- div[class^="contentRegion_"] {
+ div[class^="contentRegion-"] {
 	 --background-primary: rgba(var(--md-black), 0.8);
  }
  
- div[class^="contentRegion_"] div[style^="overflow: hidden scroll"] {
+ div[class^="contentRegion-"] div[style^="overflow: hidden scroll"] {
 	 background-color: transparent;
 	 --background-primary: rgba(var(--md-black), 0.1);
 	 --background-secondary: rgba(var(--md-black), 0.2);
@@ -577,7 +577,7 @@
  
  /* Tooltips */
  
- div[class^="tooltip_"] {
+ div[class^="tooltip-"] {
 	 --background-floating: rgba(var(--accent-alt), 1);
 	 --text-normal: #e0e0e0;
  }
@@ -606,7 +606,7 @@
  }
  
  
- /* Depreceated Components */
+ /* Depreciated Components */
  
  
  /* These use hardcoded colors, no need to bother with strange selectors */
@@ -759,6 +759,6 @@
  .container-3wLKDe {
 	 background: var(--background-primary);
  }
- li[class^="card_"]>div[class^="container_"] {
+ li[class^="card-"]>div[class^="container-"] {
 	 background: var(--background-floating)
  }
